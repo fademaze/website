@@ -9,8 +9,6 @@
     /* plan to move CSS to a file? */
     body {
         font-family: sans-serif;
-        font-weight: 200;
-        font-style: normal;
     }
     </style>
 </head>
@@ -18,9 +16,9 @@
   <noscript><h1 style="color: red;">PLEASE ENABLE JAVASCRIPT</h1></noscript>
   <script>
     if (location.hostname === "staging.fademaze.no") {
-      console.log("Panic?!")
+      console.warn("Detected staging environment, alerting user!")
       const p = document.createElement("p");
-      p.innerHTML = "<h1 style=\"color: red;\">WARNING</h1><br><p>You're visiting the website in the staging version. It's advised to go to the <a href=\"https://fademaze.no\">";
+      p.innerHTML = "<h1 style=\"color: red;\">WARNING</h1><br><p>You're visiting the website in the staging version. It's advised to go to the <a href=\"https://fademaze.no\">original website</a> instead.";
       document.body.appendChild(p);
     }
   </script>
@@ -33,7 +31,7 @@
   <div id="faq">
     <h3>Frequently Asked Questions</h3>
     <p>No one has asked me questions yet, but I made some just in case ;)</p>
-    <select>
+    <select onchange="faq(this.form)>
       <option selected="selected" disabled="disabled">Choose a question here!</option>
       <option value="hosting">Where is this page hosted?</option>
       <option value="it_introduction">What made you interested in IT?</option>
@@ -44,4 +42,3 @@
   </div>
 </body>
 </html>
-<h1>FadeMaze</h1>
