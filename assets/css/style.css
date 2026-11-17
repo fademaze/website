@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FadeMaze</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <h1 class="site-title">FadeMaze</h1>
+
+        <p>
+            Hello! I'm FadeMaze, an IT enthusiast and dream to become a
+            <b>Linux system administrator.</b> I mostly code in HTML, JS, PHP,
+            MySQL, Node.js and Python.
+
+            <br><br>
+
+            At the moment, I'm experimenting with, and learning Linux,
+            websites and cybersecurity. I've also built Discord bots
+            (mostly with Node.js) for about 3 to 5 years.
+
+            I am currently on a
+            <a href="https://www.nrk.no/artikkel/unge-er-hekta-og-tekgigantene-vet-akkurat-hva-de-gjor-21">
+                detox from social media
+            </a>.
+        </p>
+
+        <hr>
+
+        <section id="faq">
+            <h3>Frequently Asked Questions</h3>
+
+            <p>No one has asked me questions yet, but I made some just in case ;)</p>
+
+            <label for="faq-select">Choose a question:</label>
+
+            <select id="faq-select">
+                <option value="" selected disabled>
+                    Choose a question here!
+                </option>
+                <option value="hosting">Where is this page hosted?</option>
+                <option value="it_introduction">What made you interested in IT?</option>
+                <option value="using_ai">Do you use AI?</option>
+                <option value="mc_mods">Do you create Minecraft mods?</option>
+            </select>
+
+            <div id="faq-answers" aria-live="polite">
+                <p data-answer="hosting" hidden>
+                    This page is currently hosted at <a href="//uniweb.no">Uniweb.no</a>.
+                    I thought of self-hosting it, but I didn't feel comfortable with exposing my home network.
+                </p>
+
+                <p data-answer="it_introduction" hidden>
+                    I became interested in IT when I got a spare laptop from my family
+                    (Windows 10) and got a programming book from my parents at
+                    <a href="//ark.no">Ark</a>.
+                </p>
+
+                <p data-answer="mc_mods" >
+                    No, I do not create Minecraft mods, but I have experience
+                    with Minecraft servers.
+                </p>
+
+                <p data-answer="using_ai" hidden>
+                    Yes, I sometimes use AI as a tool to help me build projects faster.
+                    <br>
+                    And <b>no, the website is not vibecoded</b>.
+                    I get most elements from
+                    <a href="https://21st.dev">21st.dev</a> and
+                    <a href="https://reactbits.dev">reactbits.dev</a>,
+                    and AI for a few fixes.
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
