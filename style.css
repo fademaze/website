@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #070707;
+    color: #eee;
+    margin: 0;
+    padding: 30px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.site-title {
+    color: #eee980;
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+a {
+    color: #00aacc;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 30px 0;
+}
+
+#faq select {
+    padding: 8px;
+    margin-top: 8px;
+    max-width: 100%;
+}
+
+#faq-answers {
+    margin-top: 15px;
+    color: black;
+}
+
+/* show yellow bg for every FAQ answer */
+#faq-answers p:not([hidden]) {
+  background-color: #F4E842;
+  display: inline;
+}
